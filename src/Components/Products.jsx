@@ -5,8 +5,8 @@ const Products = ({products}) => {
     //     3. Show the product name in an h1, and the product price in a p tag
 return products.map((product) => (
     <div key= {product.id}>
-    <h1>{product.name}</h1>
-    <p>{product.price}</p>
+    <h1>{product.productData.name}</h1>
+    <p>{product.productData.price}</p>
     </div>
 ));
 }
